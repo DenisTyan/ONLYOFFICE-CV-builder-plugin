@@ -1,11 +1,11 @@
 {
-    "name"       : "CVbuilder",
+    "name"       : "简历模板",
     "guid"       : "asc.{9a2db794-d933-416d-91be-0b6ee35318b0}",
     "baseUrl"    : "",
     "version": "0.1.0",
     "variations" : [
         {
-            "description"         : "CVbuilder is a resume generation plugin, aiming to help users swiftly create, update, and share resumes.",
+            "description"         : "CVbuilder is a resume generation plugin, aiming to help users swiftly create resumes.",
             "url"                 : "index.html",
             "icons"               : ["resources/icon.png", "resources/icon@2x.png"],
             "icons2": [

@@ -1,12 +1,12 @@
 ## 概览
 
-CVbuilder是一款简历生成插件，旨在帮助用户快速创建、更新和共享简历。
+简历模板是一款简历生成插件，旨在帮助用户快速创建简历。
 
 [源代码](https://github.com/DenisTyan/ONLYOFFICE-CV-builder-plugin)
 
 ## 如何使用
 
-1. 在插件栏找到并点击CVbuilder插件。
+1. 在插件栏找到并点击简历模板插件。
 2. 选择适合自己的简历模板，预览并将其插入你的文档。
 3. 编辑、保存、导出简历。
 
@@ -16,7 +16,7 @@ CVbuilder是一款简历生成插件，旨在帮助用户快速创建、更新�
 
 ## Overview
 
-CVbuilder is a resume generation plugin, aiming to help users swiftly create, update, and share resumes.
+CVbuilder is a resume generation plugin, aiming to help users swiftly create resumes.
 
 [Source Code](https://github.com/DenisTyan/ONLYOFFICE-CV-builder-plugin)
 
