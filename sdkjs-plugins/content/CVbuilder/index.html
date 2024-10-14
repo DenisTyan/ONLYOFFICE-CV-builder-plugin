@@ -190,7 +190,7 @@ limitations under the License#
     }
 
     #colorBox:nth-child(1) {
-        background-color: #000;
+        background-color: #363636;
     }
 
     #colorBox:nth-child(2) {
@@ -198,11 +198,11 @@ limitations under the License#
     }
 
     #colorBox:nth-child(3) {
-        background-color: #ed8936;
+        background-color: #ed8036;
     }
 
     #colorBox:nth-child(4) {
-        background-color: #4585fd;
+        background-color: #1976be;
     }
 
     #colorBox:nth-child(5) {
@@ -242,15 +242,17 @@ limitations under the License#
 
     #cv {
         width: 160px;
-        height: 230px;
+        height: 260px;
         background-color: #c9c9c9;
         margin-top: 35px;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
     #cv:hover {
         width: 161px;
-        height: 231px;
+        height: 261px;
         margin-top: 34px;
         box-shadow: 0 0 10px #656565;
     }
@@ -262,7 +264,24 @@ limitations under the License#
     }
 
     #sampleElement {
-        width: 100%;
+        width: 160px;
+    }
+
+    #divImg {
+        width: 160px;
+        flex: 6;
+        overflow: hidden;
+    }
+
+
+    #divTitle {
+        width: 160px;
+        margin-top: 5px;
+        flex: 0.8;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 550;
+        color: #eaeaea;
     }
 
     #right {
@@ -311,7 +330,7 @@ limitations under the License#
                     <span id="title">行业</span>
                     <select id="industrySelect">
                         <option value="0" selected>全部</option>
-                        <option value="1">零经验实习</option>
+                        <option value="1">通用</option>
                         <option value="2">学生求职</option>
                         <option value="3">申请研究生</option>
                         <option value="4">投行咨询</option>

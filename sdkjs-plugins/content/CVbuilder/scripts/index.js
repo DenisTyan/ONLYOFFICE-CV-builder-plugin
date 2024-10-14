@@ -17,7 +17,7 @@
                 label: "全部",
             },
             {
-                label: "零经验实习",
+                label: "通用",
             },
             {
                 label: "学生求职",
@@ -128,7 +128,7 @@
                 div.id = "cv";
                 scrollBox.appendChild(div);
                 let src = "./resources/sample_copy/" + i + "/" + j + "/" + 1 + ".png";
-                div.innerHTML = "<img id='sampleElement' src=" + src + " alt='' />";
+                div.innerHTML = "<div id='divImg'><img id='sampleElement' src=" + src + " alt='' /></div> <div id='divTitle'>" + industryDic[i].label + "-" + styleDic[j].label + "</div>";
             }
         }
 
@@ -171,8 +171,7 @@
                                 "/" +
                                 colorIndex +
                                 ".png";
-                            div.innerHTML =
-                                "<img id='sampleElement' src=" + src + " alt='' />";
+                                div.innerHTML = "<div id='divImg'><img id='sampleElement' src=" + src + " alt='' /></div> <div id='divTitle'>" + industryDic[i].label + "-" + styleDic[j].label + "</div>";
                             div.setAttribute("cvId", i + "-" + j + "-" + colorIndex);
                         }
                     }
@@ -214,7 +213,7 @@
                             "/" +
                             colorIndex +
                             ".png";
-                        div.innerHTML = "<img id='sampleElement' src=" + src + " alt='' />";
+                            div.innerHTML = "<div id='divImg'><img id='sampleElement' src=" + src + " alt='' /></div> <div id='divTitle'>" + industryDic[i].label + "-" + styleDic[styleIndex].label + "</div>";
                     }
 
                     let cv = document.querySelectorAll("#cv");
@@ -258,7 +257,7 @@
                             "/" +
                             colorIndex +
                             ".png";
-                        div.innerHTML = "<img id='sampleElement' src=" + src + " alt='' />";
+                            div.innerHTML = "<div id='divImg'><img id='sampleElement' src=" + src + " alt='' /></div> <div id='divTitle'>" + industryDic[industryIndex].label + "-" + styleDic[j].label + "</div>";
                     }
 
                     let cv = document.querySelectorAll("#cv");
@@ -298,7 +297,7 @@
                         "/" +
                         colorIndex +
                         ".png";
-                    div.innerHTML = "<img id='sampleElement' src=" + src + " alt='' />";
+                    div.innerHTML = "<div id='divImg'><img id='sampleElement' src=" + src + " alt='' /></div> <div id='divTitle'>" + industryDic[industryIndex].label + "-" + styleDic[styleIndex].label + "</div>";
 
                     let cv = document.querySelectorAll("#cv");
                     let sampleElement = document.querySelectorAll("#sampleElement");
@@ -405,7 +404,7 @@
             }
             switch (industryInsert) {
                 case "1": {
-                    // 零经验实习
+                    // 通用
                     if (colorInsert == 1) {
                         // 黑色
                         if (styleInsert == 1) {
@@ -669,7 +668,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6to0gb6.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekge3011v.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -922,7 +921,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj53205ze.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuy09ua.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -1178,7 +1177,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0k66.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0fya.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -2543,7 +2542,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2553,7 +2552,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2574,7 +2573,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2584,7 +2583,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2624,7 +2623,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2634,7 +2633,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2644,7 +2643,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2654,7 +2653,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2666,7 +2665,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2676,7 +2675,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2688,7 +2687,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2698,7 +2697,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2778,7 +2777,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tj0v54.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0b6d.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -2808,7 +2807,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2818,7 +2817,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2839,7 +2838,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2849,7 +2848,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2889,7 +2888,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2899,7 +2898,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2909,7 +2908,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2919,7 +2918,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2931,7 +2930,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2941,7 +2940,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -2953,7 +2952,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -2963,7 +2962,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3043,7 +3042,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5330thx.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuw0l9t.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -3076,7 +3075,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3086,7 +3085,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3107,7 +3106,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3117,7 +3116,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3157,7 +3156,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3167,7 +3166,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3177,7 +3176,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3187,7 +3186,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3199,7 +3198,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3209,7 +3208,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3221,7 +3220,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3231,7 +3230,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3311,7 +3310,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3r0352.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuo056j.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -3367,7 +3366,7 @@
                                 oParagraph.AddColumnBreak();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3377,7 +3376,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3389,7 +3388,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3399,7 +3398,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3439,7 +3438,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3449,7 +3448,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3459,7 +3458,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3469,7 +3468,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3482,7 +3481,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3492,7 +3491,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3504,7 +3503,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3514,7 +3513,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3616,7 +3615,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3626,7 +3625,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3647,7 +3646,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3657,7 +3656,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3697,7 +3696,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3707,7 +3706,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3717,7 +3716,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3727,7 +3726,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3739,7 +3738,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3749,7 +3748,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3761,7 +3760,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3771,7 +3770,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3851,7 +3850,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tm0h3u.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekge3011v.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -3881,7 +3880,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3891,7 +3890,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3912,7 +3911,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3922,7 +3921,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3962,7 +3961,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3972,7 +3971,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -3982,7 +3981,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -3992,7 +3991,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4004,7 +4003,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4014,7 +4013,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4026,7 +4025,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4036,7 +4035,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4116,7 +4115,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5340fwv.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekgea0phe.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -4149,7 +4148,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4159,7 +4158,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4180,7 +4179,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4190,7 +4189,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4230,7 +4229,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4240,7 +4239,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4250,7 +4249,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4260,7 +4259,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4272,7 +4271,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4282,7 +4281,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4294,7 +4293,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4304,7 +4303,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4384,7 +4383,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0gpc.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekghm0zp8.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -4440,7 +4439,7 @@
                                 oParagraph.AddColumnBreak();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4450,7 +4449,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4462,7 +4461,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4472,7 +4471,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4512,7 +4511,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4522,7 +4521,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4532,7 +4531,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4542,7 +4541,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4555,7 +4554,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4565,7 +4564,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -4577,7 +4576,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -4587,7 +4586,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -6003,7 +6002,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6to0gb6.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekge3011v.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -6269,7 +6268,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj53205ze.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuy09ua.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -6538,7 +6537,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0k66.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0fya.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -7971,7 +7970,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -7981,7 +7980,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8014,7 +8013,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8024,7 +8023,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8066,7 +8065,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8076,7 +8075,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8086,7 +8085,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8096,7 +8095,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8108,7 +8107,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("社团和组织经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8118,7 +8117,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8130,7 +8129,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8140,7 +8139,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8220,7 +8219,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tj0v54.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0b6d.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -8249,7 +8248,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8259,7 +8258,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8292,7 +8291,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8302,7 +8301,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8344,7 +8343,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8354,7 +8353,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8364,7 +8363,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8374,7 +8373,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8386,7 +8385,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("社团和组织经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8396,7 +8395,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8408,7 +8407,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8418,7 +8417,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8498,7 +8497,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5330thx.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuw0l9t.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -8530,7 +8529,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8540,7 +8539,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8573,7 +8572,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8583,7 +8582,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8625,7 +8624,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8635,7 +8634,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8645,7 +8644,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8655,7 +8654,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8667,7 +8666,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("社团和组织经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8677,7 +8676,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8689,7 +8688,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8699,7 +8698,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8779,7 +8778,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3r0352.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuo056j.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -8836,7 +8835,7 @@
                                 oParagraph.AddColumnBreak();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8846,7 +8845,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8879,7 +8878,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8889,7 +8888,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8922,7 +8921,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8932,7 +8931,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8942,7 +8941,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8952,7 +8951,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8964,7 +8963,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("社团和组织经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8974,7 +8973,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -8986,7 +8985,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -8996,7 +8995,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9099,7 +9098,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9109,7 +9108,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9142,7 +9141,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9152,7 +9151,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9194,7 +9193,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9204,7 +9203,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9214,7 +9213,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9224,7 +9223,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9236,7 +9235,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("社团和组织经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9246,7 +9245,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9258,7 +9257,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9268,7 +9267,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9348,7 +9347,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tm0h3u.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekggi03bm.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -9377,7 +9376,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9387,7 +9386,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9420,7 +9419,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9430,7 +9429,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9472,7 +9471,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9482,7 +9481,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9492,7 +9491,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9502,7 +9501,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9514,7 +9513,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("社团和组织经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9524,7 +9523,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9536,7 +9535,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9546,7 +9545,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9626,7 +9625,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5340fwv.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekgea0phe.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -9658,7 +9657,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9668,7 +9667,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9701,7 +9700,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9711,7 +9710,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9753,7 +9752,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9763,7 +9762,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9773,7 +9772,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9783,7 +9782,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9795,7 +9794,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("社团和组织经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9805,7 +9804,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9817,7 +9816,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9827,7 +9826,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -9907,7 +9906,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0gpc.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekghm0zp8.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -9964,7 +9963,7 @@
                                 oParagraph.AddColumnBreak();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -9974,7 +9973,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -10007,7 +10006,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -10017,7 +10016,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -10050,7 +10049,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -10060,7 +10059,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -10070,7 +10069,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("项目经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -10080,7 +10079,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -10092,7 +10091,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("社团和组织经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -10102,7 +10101,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -10114,7 +10113,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -10124,7 +10123,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -11583,7 +11582,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6to0gb6.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekge3011v.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -11837,7 +11836,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj53205ze.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuy09ua.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -12094,7 +12093,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0k66.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0fya.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -13468,7 +13467,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("报考专业：XXX");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13478,7 +13477,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13499,7 +13498,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13509,7 +13508,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13549,7 +13548,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13559,7 +13558,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13569,7 +13568,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("研究经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13579,7 +13578,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13591,7 +13590,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13601,7 +13600,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13613,7 +13612,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13623,7 +13622,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13705,7 +13704,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tj0v54.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0b6d.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -13734,7 +13733,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("报考专业：XXX");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13744,7 +13743,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13765,7 +13764,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13775,7 +13774,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13815,7 +13814,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13825,7 +13824,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13835,7 +13834,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("研究经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13845,7 +13844,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13857,7 +13856,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13867,7 +13866,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13879,7 +13878,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -13889,7 +13888,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -13971,7 +13970,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5330thx.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuw0l9t.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -14003,7 +14002,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("报考专业：XXX");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14013,7 +14012,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14034,7 +14033,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14044,7 +14043,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14084,7 +14083,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14094,7 +14093,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14104,7 +14103,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("研究经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14114,7 +14113,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14126,7 +14125,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14136,7 +14135,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14148,7 +14147,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14158,7 +14157,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14240,7 +14239,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3r0352.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuo056j.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -14297,7 +14296,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddColumnBreak();
                                 oParagraph.AddText("报考专业：XXX");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14307,7 +14306,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14319,7 +14318,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14329,7 +14328,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14369,7 +14368,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14379,7 +14378,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14389,7 +14388,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("研究经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14399,7 +14398,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14411,7 +14410,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14421,7 +14420,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14433,7 +14432,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14443,7 +14442,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14548,7 +14547,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("报考专业：XXX");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14558,7 +14557,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14579,7 +14578,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14589,7 +14588,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14629,7 +14628,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14639,7 +14638,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14649,7 +14648,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("研究经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14659,7 +14658,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14671,7 +14670,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14681,7 +14680,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14693,7 +14692,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14703,7 +14702,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14785,7 +14784,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tm0h3u.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekggi03bm.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -14814,7 +14813,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("报考专业：XXX");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14824,7 +14823,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14845,7 +14844,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14855,7 +14854,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14895,7 +14894,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14905,7 +14904,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14915,7 +14914,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("研究经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14925,7 +14924,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14937,7 +14936,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14947,7 +14946,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -14959,7 +14958,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -14969,7 +14968,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15051,7 +15050,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5340fwv.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekgea0phe.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -15083,7 +15082,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("报考专业：XXX");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15093,7 +15092,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15114,7 +15113,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15124,7 +15123,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15164,7 +15163,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15174,7 +15173,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15184,7 +15183,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("研究经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15194,7 +15193,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15206,7 +15205,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15216,7 +15215,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15228,7 +15227,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15238,7 +15237,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15320,7 +15319,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0gpc.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekghm0zp8.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -15377,7 +15376,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddColumnBreak();
                                 oParagraph.AddText("报考专业：XXX");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15387,7 +15386,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15399,7 +15398,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15409,7 +15408,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15449,7 +15448,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15459,7 +15458,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15469,7 +15468,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("研究经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15479,7 +15478,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15491,7 +15490,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("校园经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15501,7 +15500,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -15513,7 +15512,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -15523,7 +15522,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -16928,7 +16927,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6to0gb6.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekge3011v.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -17174,7 +17173,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj53205ze.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuy09ua.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -17423,7 +17422,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0k66.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0fya.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -18743,7 +18742,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -18753,7 +18752,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -18786,7 +18785,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -18796,7 +18795,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -18836,7 +18835,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -18846,7 +18845,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -18858,7 +18857,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -18868,7 +18867,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -18878,7 +18877,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -18888,7 +18887,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -18970,7 +18969,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tj0v54.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0b6d.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -18999,7 +18998,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19009,7 +19008,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19042,7 +19041,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19052,7 +19051,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19092,7 +19091,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19102,7 +19101,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19114,7 +19113,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19124,7 +19123,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19134,7 +19133,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19144,7 +19143,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19226,7 +19225,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5330thx.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuw0l9t.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -19258,7 +19257,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19268,7 +19267,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19301,7 +19300,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19311,7 +19310,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19351,7 +19350,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19361,7 +19360,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19373,7 +19372,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19383,7 +19382,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19393,7 +19392,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19403,7 +19402,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19485,7 +19484,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3r0352.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuo056j.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -19539,7 +19538,7 @@
                                 oParagraph.AddColumnBreak();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19549,7 +19548,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19582,7 +19581,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19592,7 +19591,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19623,7 +19622,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19633,7 +19632,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19645,7 +19644,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19655,7 +19654,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19665,7 +19664,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19675,7 +19674,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19780,7 +19779,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19790,7 +19789,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19823,7 +19822,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19833,7 +19832,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19873,7 +19872,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19883,7 +19882,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19895,7 +19894,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19905,7 +19904,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -19915,7 +19914,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -19925,7 +19924,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20007,7 +20006,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tm0h3u.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekggi03bm.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -20036,7 +20035,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20046,7 +20045,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20079,7 +20078,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20089,7 +20088,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20129,7 +20128,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20139,7 +20138,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20151,7 +20150,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20161,7 +20160,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20171,7 +20170,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20181,7 +20180,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20263,7 +20262,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5340fwv.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekgea0phe.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -20295,7 +20294,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20305,7 +20304,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20338,7 +20337,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20348,7 +20347,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20388,7 +20387,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20398,7 +20397,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20410,7 +20409,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20420,7 +20419,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20430,7 +20429,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20440,7 +20439,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20522,7 +20521,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0gpc.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekghm0zp8.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -20576,7 +20575,7 @@
                                 oParagraph.AddColumnBreak();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20586,7 +20585,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20619,7 +20618,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作与实习经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20629,7 +20628,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20660,7 +20659,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20670,7 +20669,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20682,7 +20681,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("荣誉奖项");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20692,7 +20691,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -20702,7 +20701,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -20712,7 +20711,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -22064,7 +22063,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6to0gb6.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekge3011v.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -22300,7 +22299,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj53205ze.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuy09ua.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -22539,7 +22538,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0k66.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0fya.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -23815,7 +23814,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -23825,7 +23824,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -23846,7 +23845,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -23856,7 +23855,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -23897,7 +23896,7 @@
         
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -23907,7 +23906,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -23938,7 +23937,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -23948,7 +23947,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24030,7 +24029,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tj0v54.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0b6d.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -24059,7 +24058,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24069,7 +24068,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24090,7 +24089,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24100,7 +24099,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24141,7 +24140,7 @@
         
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24151,7 +24150,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24182,7 +24181,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24192,7 +24191,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24274,7 +24273,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5330thx.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuw0l9t.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -24306,7 +24305,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24316,7 +24315,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24337,7 +24336,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24347,7 +24346,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24388,7 +24387,7 @@
         
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24398,7 +24397,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24429,7 +24428,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24439,7 +24438,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24521,7 +24520,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3r0352.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuo056j.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -24583,7 +24582,7 @@
                                 oParagraph.AddColumnBreak();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24593,7 +24592,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24605,7 +24604,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24615,7 +24614,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24655,7 +24654,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24665,7 +24664,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24696,7 +24695,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24706,7 +24705,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24810,7 +24809,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24820,7 +24819,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24841,7 +24840,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24851,7 +24850,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24892,7 +24891,7 @@
         
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24902,7 +24901,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -24933,7 +24932,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -24943,7 +24942,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25025,7 +25024,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tm0h3u.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekggi03bm.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -25054,7 +25053,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25064,7 +25063,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25085,7 +25084,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25095,7 +25094,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25136,7 +25135,7 @@
         
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25146,7 +25145,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25177,7 +25176,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25187,7 +25186,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25269,7 +25268,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5340fwv.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekgea0phe.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -25301,7 +25300,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25311,7 +25310,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25332,7 +25331,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25342,7 +25341,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25383,7 +25382,7 @@
         
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25393,7 +25392,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25424,7 +25423,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25434,7 +25433,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25516,7 +25515,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0gpc.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekghm0zp8.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -25578,7 +25577,7 @@
                                 oParagraph.AddColumnBreak();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("个人总结");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25588,7 +25587,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25600,7 +25599,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25610,7 +25609,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25650,7 +25649,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25660,7 +25659,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -25691,7 +25690,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("技能和其他");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -25701,7 +25700,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -27018,7 +27017,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6to0gb6.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekge3011v.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -27260,7 +27259,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj53205ze.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuy09ua.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -27506,7 +27505,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0k66.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0fya.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -28823,7 +28822,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("专业技能");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -28833,7 +28832,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -28907,7 +28906,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -28917,7 +28916,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -28957,7 +28956,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -28967,7 +28966,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -28998,7 +28997,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29008,7 +29007,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29038,7 +29037,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tj0v54.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeux0b6d.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -29073,7 +29072,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("专业技能");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29083,7 +29082,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29157,7 +29156,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29167,7 +29166,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29207,7 +29206,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29217,7 +29216,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29248,7 +29247,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29258,7 +29257,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29288,7 +29287,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5330thx.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuw0l9t.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -29327,7 +29326,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("专业技能");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29337,7 +29336,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29411,7 +29410,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29421,7 +29420,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29461,7 +29460,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29471,7 +29470,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29502,7 +29501,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29512,7 +29511,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29542,7 +29541,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3r0352.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekeuo056j.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -29611,7 +29610,7 @@
                                 oParagraph.AddColumnBreak();
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("专业技能");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29621,7 +29620,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29686,7 +29685,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29696,7 +29695,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29736,7 +29735,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29746,7 +29745,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29777,7 +29776,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29787,7 +29786,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(237, 137, 54, false);
+                                oParagraph.SetColor(237, 128, 54, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29845,7 +29844,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("专业技能");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29855,7 +29854,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29929,7 +29928,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29939,7 +29938,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -29979,7 +29978,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -29989,7 +29988,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30020,7 +30019,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30030,7 +30029,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30060,7 +30059,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17li6tm0h3u.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekggi03bm.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -30095,7 +30094,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("专业技能");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30105,7 +30104,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30179,7 +30178,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30189,7 +30188,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30229,7 +30228,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30239,7 +30238,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30270,7 +30269,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30280,7 +30279,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30310,7 +30309,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17lj5340fwv.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekgea0phe.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -30349,7 +30348,7 @@
                                 oDocument.Push(oParagraph);
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("专业技能");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30359,7 +30358,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30433,7 +30432,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30443,7 +30442,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30483,7 +30482,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30493,7 +30492,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30524,7 +30523,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30534,7 +30533,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30564,7 +30563,7 @@
                                 oTextPr.SetFontFamily("Calibri Light");
                                 var oParagraph = oDocument.GetElement(0);
                                 var oDrawing = Api.CreateImage(
-                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m17ljb3s0gpc.png",
+                                    "https://commonresource-1252524126.cdn.xiaoeknow.com/image/m28ekghm0zp8.png",
                                     220 * 36000,
                                     350 * 36000
                                 );
@@ -30633,7 +30632,7 @@
                                 oParagraph.AddColumnBreak();
                                 var oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("专业技能");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30643,7 +30642,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30708,7 +30707,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("教育经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30718,7 +30717,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30758,7 +30757,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30768,7 +30767,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
@@ -30799,7 +30798,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("工作以外经历");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
@@ -30809,7 +30808,7 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("—————————————————————————————");
-                                oParagraph.SetColor(69, 133, 253, false);
+                                oParagraph.SetColor(25, 118, 190, false);
                                 oParagraph.SetJc("left");
                                 oParagraph.SetFontSize(25);
                                 oParagraph.SetSpacingAfter(0);
