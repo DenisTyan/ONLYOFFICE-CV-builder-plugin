@@ -60,7 +60,7 @@
             let descriptionContent = "";
             switch (industryIndex) {
                 case "0": {
-                    descriptionContent = "快来选择合适的模板，创建属于你的第一份简历吧！";
+                    descriptionContent = "快来选择合适的模板，创建属于你的第一份简历吧！（暂不支持同一文档插入多份简历）";
                     break;
                 }
                 case "1": {
