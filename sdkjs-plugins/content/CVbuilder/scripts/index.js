@@ -65,7 +65,7 @@
                 }
                 case "1": {
                     descriptionContent =
-                        "描述：学生找实习，第一次工作，没有实习经验的同学";
+                        "描述：适合各行业、各阶段的通用模板";
                     break;
                 }
                 case "2": {
@@ -417,6 +417,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -659,6 +660,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -912,6 +914,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -1203,6 +1206,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -1210,23 +1214,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -1441,6 +1456,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -1695,6 +1711,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -1960,6 +1977,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -2264,6 +2282,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -2271,23 +2290,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -2514,6 +2544,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -2768,6 +2799,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -3033,6 +3065,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -3337,6 +3370,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -3344,23 +3378,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -3587,6 +3632,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -3841,6 +3887,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -4106,6 +4153,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -4410,6 +4458,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -4417,23 +4466,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -4660,6 +4720,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -4914,6 +4975,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -5179,6 +5241,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -5482,6 +5545,7 @@
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -5489,23 +5553,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -5737,6 +5812,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -5993,6 +6069,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -6259,6 +6336,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -6561,33 +6639,44 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetSpacingBefore(2400);
-                                oParagraph.SetColor(255, 255, 255, false);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -6815,6 +6904,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -7083,6 +7173,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -7361,6 +7452,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -7675,34 +7767,44 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetSpacingBefore(2400);
-                                oParagraph.SetColor(255, 255, 255, false);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -7942,6 +8044,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -8210,6 +8313,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -8488,6 +8592,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -8802,34 +8907,44 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetSpacingBefore(2400);
-                                oParagraph.SetColor(255, 255, 255, false);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -9070,6 +9185,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -9338,6 +9454,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -9616,6 +9733,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -9930,34 +10048,44 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetSpacingBefore(2400);
-                                oParagraph.SetColor(255, 255, 255, false);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -10197,6 +10325,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -10465,6 +10594,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -10743,6 +10873,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -11057,34 +11188,44 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
                                 oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetSpacingBefore(2400);
-                                oParagraph.SetColor(255, 255, 255, false);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -11329,6 +11470,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -11573,6 +11715,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -11827,6 +11970,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -12119,35 +12263,45 @@
                                 oParagraph = Api.CreateParagraph();
                                 var oParagraph = oDocument.GetElement(0);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
-                                oParagraph.SetSpacingBefore(2400);
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxx年xx月xx日 | 女 | 北京 | 汉族 | 群众");
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
                                 oParagraph.AddColumnBreak();
                                 oParagraph.AddText("报考专业：XXX");
                                 oParagraph.SetBold(true);
@@ -12360,6 +12514,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -12616,6 +12771,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -12882,6 +13038,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -13186,35 +13343,46 @@
                                 oParagraph = Api.CreateParagraph();
                                 var oParagraph = oDocument.GetElement(0);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
-                                oParagraph.SetSpacingBefore(2400);
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxx年xx月xx日 | 女 | 北京 | 汉族 | 群众");
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
                                 oParagraph.AddColumnBreak();
                                 oParagraph.AddText("报考专业：XXX");
                                 oParagraph.SetColor(199, 57, 51, false);
@@ -13439,6 +13607,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -13695,6 +13864,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -13961,6 +14131,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -14265,35 +14436,46 @@
                                 oParagraph = Api.CreateParagraph();
                                 var oParagraph = oDocument.GetElement(0);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
-                                oParagraph.SetSpacingBefore(2400);
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxx年xx月xx日 | 女 | 北京 | 汉族 | 群众");
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
                                 oParagraph.AddColumnBreak();
                                 oParagraph.AddText("报考专业：XXX");
                                 oParagraph.SetColor(237, 128, 54, false);
@@ -14519,6 +14701,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -14775,6 +14958,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -15041,6 +15225,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -15345,35 +15530,46 @@
                                 oParagraph = Api.CreateParagraph();
                                 var oParagraph = oDocument.GetElement(0);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
-                                oParagraph.SetSpacingBefore(2400);
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxx年xx月xx日 | 女 | 北京 | 汉族 | 群众");
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
                                 oParagraph.AddColumnBreak();
                                 oParagraph.AddText("报考专业：XXX");
                                 oParagraph.SetColor(25, 118, 190, false);
@@ -15598,6 +15794,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -15854,6 +16051,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -16120,6 +16318,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -16424,35 +16623,46 @@
                                 oParagraph = Api.CreateParagraph();
                                 var oParagraph = oDocument.GetElement(0);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("姓名");
-                                oParagraph.SetSpacingBefore(2400);
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxx年xx月xx日 | 女 | 北京 | 汉族 | 群众");
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
                                 oParagraph.AddColumnBreak();
                                 oParagraph.AddText("报考专业：XXX");
                                 oParagraph.SetColor(110, 179, 88, false);
@@ -16682,6 +16892,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -16918,6 +17129,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -17164,6 +17376,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -17446,7 +17659,9 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -17454,23 +17669,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -17678,6 +17904,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -17924,6 +18151,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -18180,6 +18408,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -18472,7 +18701,9 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -18480,23 +18711,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -18714,6 +18956,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -18960,6 +19203,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -19216,6 +19460,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -19508,7 +19753,9 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -19516,23 +19763,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -19751,6 +20009,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -19997,6 +20256,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -20253,6 +20513,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -20545,7 +20806,9 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -20553,23 +20816,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -20787,6 +21061,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -21033,6 +21308,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -21289,6 +21565,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -21581,7 +21858,9 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
@@ -21589,23 +21868,34 @@
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("学校 专业");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -21828,6 +22118,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -22054,6 +22345,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -22290,6 +22582,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -22562,39 +22855,62 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：产品经理");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：产品经理");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("期望薪资：15k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -22791,6 +23107,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -23025,6 +23342,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -23269,6 +23587,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -23549,39 +23868,62 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：产品经理");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：产品经理");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("期望薪资：15k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -23786,6 +24128,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -24020,6 +24363,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -24264,6 +24608,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -24544,39 +24889,62 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：产品经理");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：产品经理");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("期望薪资：15k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -24781,6 +25149,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -25015,6 +25384,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -25259,6 +25629,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -25539,39 +25910,62 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：产品经理");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：产品经理");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("期望薪资：15k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -25776,6 +26170,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -26010,6 +26405,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -26254,6 +26650,7 @@
                                     "paragraph"
                                 );
                                 var oParaPr = oHeading1Style.GetParaPr();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 oParaPr.SetKeepNext(true);
                                 oParaPr.SetKeepLines(true);
@@ -26534,39 +26931,62 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：产品经理");
+                                oParagraph.AddText("联系方式");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：产品经理");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("期望薪资：15k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -26771,6 +27191,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -27003,6 +27424,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -27245,6 +27667,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -27529,46 +27952,68 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("Github：https://github.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：程序员");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：前端开发工程师");
+                                oParagraph.AddText("期望薪资：25k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
-                                oParagraph.SetFontSize(20);
-                                oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("期望薪资：20k");
-                                oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -27761,6 +28206,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -28001,6 +28447,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -28251,6 +28698,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -28543,46 +28991,68 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("Github：https://github.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：程序员");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：前端开发工程师");
+                                oParagraph.AddText("期望薪资：25k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
-                                oParagraph.SetFontSize(20);
-                                oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("期望薪资：20k");
-                                oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -28783,6 +29253,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -29023,6 +29494,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -29273,6 +29745,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -29565,46 +30038,68 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("Github：https://github.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：程序员");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：前端开发工程师");
+                                oParagraph.AddText("期望薪资：25k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
-                                oParagraph.SetFontSize(20);
-                                oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("期望薪资：20k");
-                                oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -29805,6 +30300,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -30045,6 +30541,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -30295,6 +30792,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -30587,46 +31085,68 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("Github：https://github.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：程序员");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：前端开发工程师");
+                                oParagraph.AddText("期望薪资：25k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
-                                oParagraph.SetFontSize(20);
-                                oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("期望薪资：20k");
-                                oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();
@@ -30827,6 +31347,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -31067,6 +31588,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -31317,6 +31839,7 @@
                             this.callCommand(function () {
                                 var oDocument = Api.GetDocument();
                                 var oSection = oDocument.GetFinalSection();
+                                oSection.SetEqualColumns(1);
                                 oSection.SetPageMargins(800, 300, 800, 300);
                                 var oHeading1Style = oDocument.CreateStyle(
                                     "Heading 1",
@@ -31609,46 +32132,68 @@
                                 oParagraph.SetStyle(oHeading1Style);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("姓名（英文名）");
+                                oParagraph.AddText("姓名");
+                                oParagraph.AddText("（英文名）");
+                                oParagraph.SetFontSize(26);
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetSpacingBefore(2400);
                                 oParagraph.SetBold(true);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetSpacingBefore(2400);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxx-xxxx-xxxx");
+                                oParagraph.AddText("性别|民族|籍贯|政治面貌");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("xxxxxxxxxxx@xxx.com");
+                                oParagraph.AddText("学校|专业");
                                 oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("联系方式");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("电话：xxx-xxxx-xxxx");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("邮箱：xxxxxxxx@xxx.com");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
                                 oParagraph.AddText("Github：https://github.com");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
+                                oParagraph.SetFontSize(20);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.AddText("求职意向");
+                                oParagraph.SetColor(255, 255, 255, false);
+                                oParagraph.SetBold(true);
+                                oParagraph.SetSpacingBefore(500);
+                                oDocument.Push(oParagraph);
+                                oParagraph = Api.CreateParagraph();
+                                oParagraph.SetStyle(oHeading1Style);
+                                oParagraph.AddText("期望岗位：程序员");
+                                oParagraph.SetColor(255, 255, 255, false);
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph = Api.CreateParagraph();
                                 oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("求职意向：前端开发工程师");
+                                oParagraph.AddText("期望薪资：25k");
                                 oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
-                                oParagraph.SetFontSize(20);
-                                oDocument.Push(oParagraph);
-                                oParagraph = Api.CreateParagraph();
-                                oParagraph.SetStyle(oHeading1Style);
-                                oParagraph.AddText("期望薪资：20k");
-                                oParagraph.SetColor(255, 255, 255, false);
-                                oParagraph.SetJc("center");
                                 oParagraph.SetFontSize(20);
                                 oDocument.Push(oParagraph);
                                 oParagraph.AddColumnBreak();

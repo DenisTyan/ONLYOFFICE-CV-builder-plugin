@@ -28,26 +28,18 @@
 			],
             "size": [1180, 600],
             "store": {
-				"background": {
-					"light" : "#dadada",
-					"dark" : "#dadada"
-				},
 				"screenshots" : [
 					"resources/store/screenshots/image.png",
 					"resources/store/screenshots/image_1.png",
 					"resources/store/screenshots/image_2.png"
 				],
-				"icons" : {
-					"light" : "resources/store/icons",
-					"dark"  : "resources/store/icons"
-				},
 				"categories": ["recommended", "work"]
 			}
         },
         {
             "description"         : "About",
             "url"                 : "index_about.html",
-            "icons"               : ["resources/icon.png", "resources/icon@2x.png"],
+            "icons"               : ["resources/store/icons", "resources/icon@2x.png"],
             "isViewer"            : false,
             "EditorsSupport"      : ["word"],
             "isVisual"            : true,
